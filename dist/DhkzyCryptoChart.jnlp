@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DhkzyCryptoChart.jnlp">
+  <information>
+    <title>DhkzyCryptoChart</title>
+    <vendor>darianhu</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DhkzyCryptoChart.jar" size="16814" download="eager" />
+    <jar href="lib/json-20210307.jar" size="69710" download="eager" />
+    <jar href="lib/json-simple-1.1.1.jar" size="23737" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DhkzyCryptoChart" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dhkzycryptochart.DhkzyCryptoChart"  name="DhkzyCryptoChart" />
+  <update check="always"/>
+</jnlp>
