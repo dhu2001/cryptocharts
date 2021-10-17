@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhkzycryptochart.AboutController">
+   <children>
+      <Label layoutX="28.0" layoutY="34.0" text="About">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="522.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#HandleGoToHome" text="Home" />
+      <TextArea editable="false" layoutX="62.0" layoutY="80.0" prefHeight="228.0" prefWidth="476.0" text="      Hi, I'm Darian Hu a sophomore undergraduate studying computer science&#10;at the University of Missouri, in Columbia. This java application was designed as the final project for 3330 - Object Oriented Programming taught by Professor Wergeles. The purpose of this application is to help keep tabs on the price of Bitcoin as well as simulate the &quot;what if's&quot; and potential earnings if the user would have invested.&#10;  " wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

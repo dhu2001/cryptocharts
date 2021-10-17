@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhkzycryptochart.HomeController">
+   <children>
+      <AreaChart fx:id="areaChart" layoutX="250.0" layoutY="84.0" legendVisible="false" prefHeight="196.0" prefWidth="324.0">
+        <xAxis>
+          <CategoryAxis fx:id="priceX" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="priceY" side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <Label layoutX="235.0" layoutY="27.0" text="Crypto Chart">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="84.0" text="Buy Amount" />
+      <Label layoutX="46.0" layoutY="126.0" text="Market Price" />
+      <Text fx:id="currentPrice" layoutX="400.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" />
+      <Text fx:id="buyAmountText" layoutX="171.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" />
+      <Text fx:id="marketPriceText" layoutX="158.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" />
+      <Button layoutX="522.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#HandleGoToAbout" text="About" />
+      <TextField fx:id="priceField" layoutX="59.0" layoutY="326.0" />
+      <Label layoutX="38.0" layoutY="331.0" text="\$" />
+      <Button layoutX="235.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#confirmButton" prefWidth="70.0" text="Buy" />
+      <Label layoutX="327.0" layoutY="263.0" text="BTC - Powered By coingecko API" />
+      <Label layoutX="270.0" layoutY="280.0" text="NOTE: coingecko updates prices every 1-10 minute(s)" />
+      <Label layoutX="46.0" layoutY="165.0" text="Shares" />
+      <Label layoutX="48.0" layoutY="200.0" text="Net change" />
+      <Text fx:id="sharesText" layoutX="193.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" />
+      <Text fx:id="netChangeText" layoutX="188.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" />
+      <Label layoutX="261.0" layoutY="297.0" text="Crypto Chart updates information once every 10 seconds." />
+      <Button layoutX="49.0" layoutY="250.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleSave" prefWidth="70.0" text="Save" />
+      <Button layoutX="158.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#handleOpen" prefWidth="70.0" text="Open" />
+   </children>
+</Pane>
